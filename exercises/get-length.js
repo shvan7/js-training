@@ -1,13 +1,21 @@
 'use strict'
 
 /*
- * Create a `getLength` function that takes an array or a string
- * and return its length.
+ * Create a getLength function that takes an array or a string
+ * and return it's length.
  *
  * @notions Data-Structures, Get
  */
-
 // Your code :
+/* *********************** */
+// or i can use length method :) I use 'for of' because 'while' don't count no enumerable array
+const getLength = (array) => {
+  let i = 0
+    for (let a of array) {
+      i++
+    }
+    return(i)
+}
 
 //* Begin of tests
 const assert = require('assert')

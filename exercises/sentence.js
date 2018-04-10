@@ -1,12 +1,18 @@
 'use strict'
 
 /*
- * Create a `sentence` function that takes an array of strings
- * and return a string of all the element separated by a space
- *
- */
-
-
+* Create a function `sentence` that takes an array of strings
+* and return a strings of all the element separated by spaces
+*
+const sentence = (array) => {
+let str = ''
+for (let i = 0 ; i < array.length ; i++) {
+str += array[i]
+if (i + 1 < array.length) str += " "
+}
+return(str);
+}*/
+const sentence = (array) => array.join(" ")
 //* Begin of tests
 const assert = require('assert')
 
